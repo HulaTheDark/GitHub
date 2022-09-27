@@ -1,0 +1,11 @@
+G:\Repos\Lommeregner\Lommeregner\bin\Debug\Lommeregner.exe.config
+G:\Repos\Lommeregner\Lommeregner\bin\Debug\Lommeregner.exe
+G:\Repos\Lommeregner\Lommeregner\bin\Debug\Lommeregner.pdb
+G:\Repos\Lommeregner\Lommeregner\obj\Debug\Lommeregner.csproj.AssemblyReference.cache
+G:\Repos\Lommeregner\Lommeregner\obj\Debug\Lommeregner.csproj.SuggestedBindingRedirects.cache
+G:\Repos\Lommeregner\Lommeregner\obj\Debug\Lommeregner.Calculator.resources
+G:\Repos\Lommeregner\Lommeregner\obj\Debug\Lommeregner.Properties.Resources.resources
+G:\Repos\Lommeregner\Lommeregner\obj\Debug\Lommeregner.csproj.GenerateResource.cache
+G:\Repos\Lommeregner\Lommeregner\obj\Debug\Lommeregner.csproj.CoreCompileInputs.cache
+G:\Repos\Lommeregner\Lommeregner\obj\Debug\Lommeregner.exe
+G:\Repos\Lommeregner\Lommeregner\obj\Debug\Lommeregner.pdb

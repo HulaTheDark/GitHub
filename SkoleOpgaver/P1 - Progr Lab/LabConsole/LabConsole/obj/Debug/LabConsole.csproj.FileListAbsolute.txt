@@ -1,0 +1,8 @@
+G:\Repos\LabConsole\LabConsole\bin\Debug\LabConsole.exe.config
+G:\Repos\LabConsole\LabConsole\bin\Debug\LabConsole.exe
+G:\Repos\LabConsole\LabConsole\bin\Debug\LabConsole.pdb
+G:\Repos\LabConsole\LabConsole\obj\Debug\LabConsole.csproj.AssemblyReference.cache
+G:\Repos\LabConsole\LabConsole\obj\Debug\LabConsole.csproj.SuggestedBindingRedirects.cache
+G:\Repos\LabConsole\LabConsole\obj\Debug\LabConsole.csproj.CoreCompileInputs.cache
+G:\Repos\LabConsole\LabConsole\obj\Debug\LabConsole.exe
+G:\Repos\LabConsole\LabConsole\obj\Debug\LabConsole.pdb
