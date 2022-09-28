@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 namespace Lommeregner
 {
+
+    /*  
+     * Because this is a calculator the most of the items in here are self explaning i am only writing comments on the parts i think needs them.
+     */
     public partial class Calculator : Form
     {
         private decimal ValueFirst = 0.0m;
@@ -195,8 +199,10 @@ namespace Lommeregner
 
         private void EqualBtn_Click(object sender, EventArgs e)
         {
-
-
+            /* 
+             * Makes the equations between the first and second value
+             * The result is cut to 4 decimals
+            */
             switch (Operators)
             {
                 case "-":
@@ -225,6 +231,10 @@ namespace Lommeregner
                     txtBox.Text = Result.ToString();
                     break;
             }
+
+            /* 
+             * This is the list box, it is writing the old equations so the user don´t have to remeber them
+             */
             if (!string.IsNullOrWhiteSpace(txtBox.Text))
             {
                 listBox1.Items.Add($"{ValueFirst:0.####} {Operators} {ValueSecond:0.####} = {Result:0.####}");
