@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Console;
 
 namespace Lommeregner
 {
@@ -200,37 +201,48 @@ namespace Lommeregner
         private void EqualBtn_Click(object sender, EventArgs e)
         {
             /* 
-             * Makes the equations between the first and second value
-             * The result is cut to 4 decimals
+             * Makes the equations between the first and second value.
+             * The result is cut to 4 decimals.
+             * The TryCatch is an exception handling process which makes it possible to divide by zero.
             */
-            switch (Operators)
+
+            try
             {
-                case "-":
-                    ValueSecond = decimal.Parse(txtBox.Text);
-                    Result = ValueFirst - ValueSecond;
-                    txtBox.Text = Result.ToString("0.0000");
-                    break;
-                case "+":
-                    ValueSecond = decimal.Parse(txtBox.Text);
-                    Result = ValueFirst + ValueSecond;
-                    txtBox.Text = Result.ToString("0.0000");
-                    break;
-                case "/":
-                    ValueSecond = decimal.Parse(txtBox.Text);
-                    Result = ValueFirst / ValueSecond;
-                    txtBox.Text = Result.ToString("0.0000");
-                    break;
-                case "*":
-                    ValueSecond = decimal.Parse(txtBox.Text);
-                    Result = ValueFirst * ValueSecond;
-                    txtBox.Text = Result.ToString("0.0000");
-                    break;
-                case "%":
-                    ValueSecond = decimal.Parse(txtBox.Text);
-                    Result = ValueFirst % ValueSecond;
-                    txtBox.Text = Result.ToString();
-                    break;
+                switch (Operators)
+                {
+                    case "-":
+                        ValueSecond = decimal.Parse(txtBox.Text);
+                        Result = ValueFirst - ValueSecond;
+                        txtBox.Text = Result.ToString("0.0000");
+                        break;
+                    case "+":
+                        ValueSecond = decimal.Parse(txtBox.Text);
+                        Result = ValueFirst + ValueSecond;
+                        txtBox.Text = Result.ToString("0.0000");
+                        break;
+                    case "/":
+                        ValueSecond = decimal.Parse(txtBox.Text);
+                        Result = ValueFirst / ValueSecond;
+                        txtBox.Text = Result.ToString("0.0000");
+                        break;
+                    case "*":
+                        ValueSecond = decimal.Parse(txtBox.Text);
+                        Result = ValueFirst * ValueSecond;
+                        txtBox.Text = Result.ToString("0.0000");
+                        break;
+                    case "%":
+                        ValueSecond = decimal.Parse(txtBox.Text);
+                        Result = ValueFirst % ValueSecond;
+                        txtBox.Text = Result.ToString();
+                        break;
+                }
             }
+            catch (DivideByZeroException)
+            {
+
+                WriteLine("Divison of {0} by zero", ValueFirst);
+            }
+
 
             /* 
              * This is the list box, it is writing the old equations so the user don´t have to remeber them
@@ -239,6 +251,9 @@ namespace Lommeregner
             {
                 listBox1.Items.Add($"{ValueFirst:0.####} {Operators} {ValueSecond:0.####} = {Result:0.####}");
             }
+
+
+
 
         }
 
